@@ -28,9 +28,9 @@ function draw() {
   spacecraft.addImage(scimg);
   if(!hasDocked){
 
-     spacecraft = spacecraftx + random(-1,1);
-     spacecraft.x = spacecraft.x + Random(-1,1);
-     spacecraft.x = spacecraft.x + randomNumbers(-1,1);
+    // spacecraft = spacecraftx + random(-1,1);
+    // spacecraft.x = spacecraft.x + Random(-1,1);
+     //spacecraft.x = spacecraft.x + randomNumbers(-1,1);
      spacecraft.x = spacecraft.x + random(-1,1);
     
   if(keyDown("UP_ARROW")){
@@ -59,26 +59,26 @@ function draw() {
      text("Docking Successful!", 200, 300);
    }
 
-   if(spacecraft.y <= (iss.y-70) && spacecraft.x <= (iss.x-10)){
-     hasDocked = true;
-     textSize(25);
-     fill("white")
-     text("Docking Successful!", 200, 300);
-   }
+   //if(spacecraft.y <= (iss.y-70) && spacecraft.x <= (iss.x-10)){
+     //hasDocked = true;
+     //textSize(25);
+     //fill("white")
+     //text("Docking Successful!", 200, 300);
+   
 
-   if(spacecraft.y <= (iss.y+70) && spacecraft.x <= (iss.x-10)){
-     hasDocked = true;
-     textSize(25);
-   fill("white")
-     text("Docking UnSuccessful!", 200, 300);
-   }
+   //if(spacecraft.y <= (iss.y+70) && spacecraft.x <= (iss.x-10)){
+     //hasDocked = true;
+     //textSize(25);
+   //fill("white")
+     //text("Docking UnSuccessful!", 200, 300);
+   //}
 
-   if(spacecraft.y <= (iss.y+70) && spacecraft.x <= (iss.x-10)){
-     hasDocked = true;
-     textSize(25);
-   fill("white")
-    text("Docking Successful!", 200, 300);
-   }
+   //if(spacecraft.y <= (iss.y+70) && spacecraft.x <= (iss.x-10)){
+     //hasDocked = true;
+     //textSize(25);
+   //fill("white")
+    //text("Docking Successful!", 200, 300);
+   //}
 
   drawSprites();
 }
